@@ -11,8 +11,9 @@
     {{ range $.Site.Data.links }}
       <a class="link-item" href="{{ .link }}" rel="noopener noreferrer" target="_blank">
         <img class="link-avatar" src="{{ .avatar }}" alt="{{ .title }}">
-        <h3 class="link-title">{{ .title }}</h3>
-        <p class="link-description">{{ .description }}</p>
+        <h3 class="link-title" style="margin-bottom: 0">{{ .title }}</h3>
+        <p class="link-description link-institution" style="margin-top: 0; margin-bottom: 0;">{{ .institution }}</p>
+        <p class="link-description"  style="margin-top: 0">{{ .description }}</p>
       </a>
     {{ end }}
   </section>
